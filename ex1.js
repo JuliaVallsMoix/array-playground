@@ -4,7 +4,7 @@
 
 let strings = ["hello", "what", "is", "up", "dude"];
 
-let resultado = strings.map(); // TODO
+let resultado = strings.map((string) => string + '-' + string.length); // TODO
 
 console.log(resultado); // [hello-5, what-4, is-2, up-2, dude-4]
 
