@@ -2,8 +2,13 @@
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex
 
 function cortaPorAqui(corteIzq, corteDer, array) {
-    return;
+
+    let indiceIzq = array.findIndex((x) => x == corteIzq);
+    let indiceDer = array.findIndex((x) => x == corteDer);
+
+    return array.slice(indiceIzq, indiceDer + 1);
 }
+
 
 /**
  * Utiliza de manera combinada y adecuadamente el método .findIndex y .slice para 'cortar' un array entre dos elementos. Para simplificar, el primer animal siempre está 'a la izquierda' del segundo animal por el que queremos cortar
